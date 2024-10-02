@@ -40,4 +40,4 @@ class Album(models.Model):
         null=False, blank=False,
         validators=[MinValueValidator(0.0),]
     )
-    owner = models.ForeignKey(Profile, on_delete=models.DO_NOTHING)
+    owner = models.ForeignKey(Profile, on_delete=models.CASCADE)
